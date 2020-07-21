@@ -1,6 +1,7 @@
 import numpy as np
 import tensorflow as tf
 
+from random import shuffle
 from tensorflow.keras.utils import to_categorical, Sequence
 
 class GetDataset:
