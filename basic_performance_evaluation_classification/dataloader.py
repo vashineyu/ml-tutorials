@@ -62,9 +62,9 @@ class DataLoader(Sequence):
     	Return:
     		x, y in batches (N, H, W, C), (N, K)
     	"""
-        super(DataLoader, self).__init__()
-        self.dataset = dataset
-        self.batch_size = batch_size
+    	super(DataLoader, self).__init__()
+    	self.dataset = dataset
+    	self.batch_size = batch_size
 
     def __getitem__(self, idx):
         start_idx = idx * self.batch_size
